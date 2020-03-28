@@ -4,6 +4,9 @@ inputs:
   database-file-or-path:  # id of input
     description: 'Filename of database or path to folder of databases'
     required: true
+  folder-to-scan:  # id of input
+    description: 'Folder tree containing the virus samples'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
