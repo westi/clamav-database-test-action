@@ -1,0 +1,11 @@
+name: 'clamav database test'
+description: 'Test clamav database(s)'
+inputs:
+  database-file-or-path:  # id of input
+    description: 'Filename of database or path to folder of databases'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.database-file-or-path }}
