@@ -1,5 +1,5 @@
 #!/bin/sh -l
-/usr/bin/clamscan -d $1 -r $2
+/usr/bin/clamscan -z -d $1 -r $2
 
 if [ $? -eq 1 ]; then
 	echo "Viruses found!"
